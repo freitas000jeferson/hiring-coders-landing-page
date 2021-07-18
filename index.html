@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link rel="stylesheet" href="./style.css"/>
+    <script type="text/javascript" src="./index.js"></script>
+    <title>JF E-commerce</title>
 </head>
 <body>
-    ola mundo
+    <header>
+        <div class="container-header">
+            <div class="container-title"><span>JF</span><h2>E-commerce</h2></div>
+            <div class="container-search">
+                <input class="input-search" placeholder="pesquisar"/>
+                <button onclick="(e)=>{e.preventDefalt()}"><i class="fa fa-search"></i></button>
+            </div>
+            <button class="btn-login" onclick="(e)=>{e.preventDefalt()}">Entrar</button>
+            <nav>
+                <ul>
+                    <li> <a href="#">
+                        <i class='far fa-heart icon'></i> 
+                        <div class="title-item-menu">
+                         Favoritos
+                        </div>
+                    </a></li>
+                    <li> <a href="#">
+                        <i class="fa fa-shopping-cart icon"></i> 
+                        <div class="title-item-menu">
+                            Carrinho
+                           </div>
+                    </a></li>
+                </ul>
+                    
+            </nav>
+            <i class="material-icons">&#xe5d2;</i>
+        </div>
+    </header>
+    <main>
+        <section class="sign-in">
+            <div class="container-form">
+                <form id="form" onsubmit="event.preventDefault(); submitForm();">
+                    <h1>Seja o primeiro a ver nossas promoções! </h1>
+                    <div>
+                        <fieldset>
+                            <label for="username-back-friday"><i href="#" class="fas fa-user-alt icon-label"></i></label>
+                            <input id="username-back-friday" type="text" title="username" placeholder="Nome completo">
+                        </fieldset>
+                        <fieldset>
+                            <label for="email-back-friday"><i href="#" class="fas fa-envelope icon-label"></i></label>
+                            <input id="email-back-friday" type="text" title="email" placeholder="Email">
+                        </fieldset>
+                    </div>
+                    <button class="btn-send-black-friday" 
+                    type="submit">Cadastrar</button>
+                </form>
+            </div>
+            <img src="./assets/image_black_friday.png" alt="black friday">
+            
+        </section>
+        <!-- <section class="list-products">
+        </section> -->
+    </main>
+    <footer>
+        <h3> JF E-commerce</h3>
+        <div class="links">
+            <div> Jeferson Gonçalves de Freitas</div>
+            <a href="https://github.com/freitas000jeferson/"><i class='fab fa-github icon'></i></a> 
+            <a href="https://www.linkedin.com/in/jeferson-freitas-5705951a0/"><i class='fab fa-linkedin icon'></i></a> 
+        </div>
+        <div class="divider"></div>
+        <div class="all-right"> 
+            Todos Direitos Reservados | 2021
+        </div>
+    </footer>
 </body>
 </html>
